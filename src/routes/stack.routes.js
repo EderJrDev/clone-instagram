@@ -15,14 +15,14 @@ export default function StackRoutes() {
       {/* {console.log("Autenticado?: ", isAuthenticated )} */}
       {/* {!isAuthenticated ? ( */}
       <Stack.Screen
-        name="login"
+        name="Login"
         component={Login}
         options={{
           gestureEnabled: false,
         }}
       />
       <Stack.Screen
-        name="home"
+        name="Home"
         component={Home}
         options={{
           gestureEnabled: false,

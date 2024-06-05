@@ -44,7 +44,7 @@ export default function Login({ navigation }) {
             <Button
               text="Entrar"
               background="blue-600"
-              action={() => navigation.navigate("home")}
+              action={() => navigation.navigate("Home")}
             />
           </View>
           <View className="items-center">

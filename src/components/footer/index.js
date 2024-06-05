@@ -24,31 +24,31 @@ const Footer = () => {
 
   return (
     <View
-      className="flex-row justify-around pb-2 absolute bottom-0 w-full bg-white columns-2">
+      className="flex-row justify-around pb-5 absolute bottom-0 w-full bg-white columns-2">
       <TouchableOpacity onPress={() => navigation.navigate("home")}>
         <View className={isActivePage("feed")}>
-          <Entypo name="home" size={24} color="black" />
+          <Entypo name="home" size={26} color="black" />
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("home")}>
         <View className={isActivePage("feed")}>
-          <Ionicons name="search" size={24} color="black" />
+          <Ionicons name="search" size={26} color="black" />
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("home")}>
         <View className={isActivePage("feed")}>
-          <Feather name="plus-square" size={24} color="black" />
+          <Feather name="plus-square" size={26} color="black" />
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("home")}>
         <View className={isActivePage("feed")}>
-          <Octicons name="video" size={24} color="black" />
+          <Octicons name="video" size={26} color="black" />
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("home")}>
         <View className={isActivePage("feed")}>
           <TouchableHighlight>
-            <Image className="h-6 w-6 border rounded-full" source={{ uri: "https://avatars.githubusercontent.com/EderJrDev" }} />
+            <Image className="h-8 w-8 border rounded-full" source={{ uri: "https://avatars.githubusercontent.com/EderJrDev" }} />
           </TouchableHighlight>
         </View>
       </TouchableOpacity>
