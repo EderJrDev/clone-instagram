@@ -8,10 +8,10 @@ import StoryItem from "../../components/stories";
 import { POSTS } from "../../utils/data/posts";
 import { STORIES } from "../../utils/data/stories";
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <View className="flex-1 mt-10">
-      <Header />
+      <Header navigation={navigation} />
       <ScrollView>
         <View className="p-2">
           <SafeAreaView>

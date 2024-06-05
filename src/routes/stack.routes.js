@@ -5,61 +5,24 @@ import Home from "../screens/home";
 const Stack = createNativeStackNavigator();
 
 export default function StackRoutes() {
-
-
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false, presentation: "card" }}
     >
-      {/* {console.log(touch)} */}
-      {/* {console.log("Autenticado?: ", isAuthenticated )} */}
-      {/* {!isAuthenticated ? ( */}
       <Stack.Screen
-        name="Login"
+        name="login"
         component={Login}
         options={{
           gestureEnabled: false,
         }}
       />
       <Stack.Screen
-        name="Home"
-        component={Home}
-        options={{
-          gestureEnabled: false,
-        }}
-      />
-      {/* <Stack.Screen
         name="home"
         component={Home}
         options={{
           gestureEnabled: false,
         }}
-      /> */}
-      {/* ) : ( */}
-      {/* <Stack.Screen
-        name="Home"
-        component={DrawerRoutes}
-        options={{
-          gestureEnabled: false,
-        }}
-      /> */}
-      {/* )} */}
-
-      {/* <Stack.Screen
-        name="Login"
-        component={DrawerRoutes}
-        options={{
-          gestureEnabled: false,
-        }}
       />
-
-      <Stack.Screen
-        name="Logout"
-        component={FirstPage}
-        options={{
-          gestureEnabled: false,
-        }}
-      /> */}
     </Stack.Navigator>
   );
 }

@@ -1,14 +1,16 @@
-import { Text, View } from 'react-native'
+import { Pressable, Text, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 
-const Header = () => {
+const Header = ({ navigation }) => {
   return (
     <View className="flex flex-row justify-between p-5">
       <View>
-        <Text className="text-xl font-bold">
-          Instagram
-        </Text>
+        <Pressable onPress={() => navigation.navigate("login")}>
+          <Text className="text-xl font-bold">
+            Instagram
+          </Text>
+        </Pressable>
       </View>
       <View className="flex flex-row gap-5">
         <View>
